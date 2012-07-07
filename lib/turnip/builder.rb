@@ -1,4 +1,5 @@
-require "gherkin"
+# FIXME: #require is not supported in RubyMotion
+# require "gherkin"
 
 module Turnip
   class Builder

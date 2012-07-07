@@ -1,5 +1,6 @@
-require "turnip"
-require "rspec"
+# require "turnip"
+# FIXME: #require is not supported in RubyMotion
+# require "rspec"
 
 module Turnip
   module RSpec
@@ -13,7 +14,8 @@ module Turnip
       def load(*a, &b)
         if a.first.end_with?('.feature')
           begin
-            require 'spec_helper'
+# FIXME: #require is not supported in RubyMotion
+#             require 'spec_helper'
           rescue LoadError
           end
           Turnip::RSpec.run(a.first)
